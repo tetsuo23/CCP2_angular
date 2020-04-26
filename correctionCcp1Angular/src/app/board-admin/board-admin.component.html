@@ -1,0 +1,87 @@
+<div class="container-fluid" id="admin">
+  <div id="page-wrapper">
+    <div id="wrapper">
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="adjust-nav">
+          <div class="row d-flex justify-content-around">
+            <div class="col-lg-4">
+              <h2>{{ username }} DASHBOARD</h2>
+            </div>
+
+
+            <div class="row">
+              <div class="col-12 d-flex align-self-center">
+
+
+
+
+                <div class="col-3 col-lg-3">
+                  <div class="btn btn-secondary">
+                    <a href="blank.html">
+                      <i class="fa fa-envelope-o fa-5x"></i>
+                      <h4>Projet</h4>
+                    </a>
+                  </div>
+
+
+                </div>
+
+                <div class="col-3 col-md-3">
+                  <button class="btn btn-secondary" [routerLink]="['/']">
+                    <img src="../../assets/img/cross.png" alt="" srcset="../../assets/img/cross.png 1x">
+                  </button>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page-inner">
+        <ul>
+          <li>
+            {{ username }}
+          </li>
+        </ul>
+
+        <ul>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/post">Posts</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="post/create">Create post</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="members">Members</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+
+            <a class="nav-link" routerLink="member/create">Create Member</a>
+          </li>
+        </ul>
+
+        <tbody>
+
+          <tr *ngFor="let post of posts; let i = index">
+            <td>{{ post.title }}</td>
+
+
+
+            <td><a [routerLink]="['/post', post._id]" class="btn btn-primary">Edit</a></td>
+
+            <td><a class="btn btn-danger" (click)="deletePost(post._id,i)">Delete</a></td>
+          </tr>
+        </tbody>
+        <!-- <app-post></app-post> -->
+
+      </div>
+      <app-work-in-progress></app-work-in-progress>
+
+    </div>
+  </div>
