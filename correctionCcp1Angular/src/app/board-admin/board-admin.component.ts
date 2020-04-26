@@ -33,29 +33,29 @@ export class BoardAdminComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.userService.getAdminBoard().subscribe(
-    //   data => {
-    //     this.content = data;
-    //   },
-    //   err => {
-    //     this.content = JSON.parse(err.error).message;
-    //   }
-    // );
-    // this.isLoggedIn = !!this.tokenStorageService.getToken();
-    // if (this.isLoggedIn) {
-    //   const user = this.tokenStorageService.getUser();
-    //   this.username = user.username;
+    this.userService.getAdminBoard().subscribe(
+      data => {
+        this.content = data;
+      },
+      err => {
+        this.content = JSON.parse(err.error).message;
+      }
+    );
+    this.isLoggedIn = !!this.tokenStorageService.getToken();
+    if (this.isLoggedIn) {
+      const user = this.tokenStorageService.getUser();
+      this.username = user.username;
 
-    //   this.password = user.password;
-    //   this.roles = user.roles;
-    //   this.role = user.role;
+      this.password = user.password;
+      this.roles = user.roles;
+      this.role = user.role;
 
-    // }
-    // this.userService
-    //   .getUsers()
-    //   .subscribe((data: User[]) => {
-    //     this.users = data;
-    //   });
+    }
+    this.userService
+      .getUsers()
+      .subscribe((data: User[]) => {
+        this.users = data;
+      });
     this.bs
       .getPosts()
       .subscribe((data: Post[]) => {

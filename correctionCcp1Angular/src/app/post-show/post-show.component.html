@@ -13,9 +13,11 @@
       <td>{{ post.content }}</td>
 
 
-      <td><a [routerLink]="['/post', post._id]" class="btn btn-primary">Edit</a></td>
+      <div *ngIf="isLoggedIn">
+        <td><a [routerLink]="['/post', post._id]" class="btn btn-primary">Edit</a></td>
 
-      <td><a class="btn btn-danger" (click)="deletePost(post._id,i)">Delete</a></td>
+        <td><a class="btn btn-danger" (click)="deletePost(post._id,i)">Delete</a></td>
+      </div>
     </tr>
   </tbody>
 </table>

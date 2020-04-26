@@ -3,49 +3,109 @@
     <div id="wrapper">
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="adjust-nav">
-          <div class="row d-flex justify-content-around">
-            <div class="col-lg-4">
+          <div class="row">
+            <div class="col-lg-9 d-flex justify-content-around">
               <h2>{{ username }} DASHBOARD</h2>
             </div>
-
-
-            <div class="row">
-              <div class="col-12 d-flex align-self-center">
-
-
-
-
-                <div class="col-3 col-lg-3">
-                  <div class="btn btn-secondary">
-                    <a href="blank.html">
-                      <i class="fa fa-envelope-o fa-5x"></i>
-                      <h4>Projet</h4>
-                    </a>
-                  </div>
-
-
-                </div>
-
-                <div class="col-3 col-md-3">
-                  <button class="btn btn-secondary" [routerLink]="['/']">
-                    <img src="../../assets/img/cross.png" alt="" srcset="../../assets/img/cross.png 1x">
-                  </button>
-                </div>
-
-
-              </div>
+            <div class="col-3 col-md-3">
+              <button class="btn btn-secondary" [routerLink]="['/']">
+                <img src="../../assets/img/cross.png" alt="" srcset="../../assets/img/cross.png 1x">
+              </button>
             </div>
+
+
           </div>
         </div>
       </div>
       <div id="page-inner">
-        <ul>
-          <li>
-            {{ username }}
-          </li>
-        </ul>
 
-        <ul>
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <!-- <div class="card col-3 col-lg-2">
+
+            <div class="btn btn-secondary">
+              <a class="nav-link" routerLink="/post">Posts</a>
+            </div>
+          </div>
+          <div class="card col-3 col-lg-2">
+            <div class="btn btn-secondary">
+              <a class="nav-link" routerLink="members">Members</a>
+            </div>
+          </div>
+          <div class="card col-3 col-lg-2">
+            <div class="btn btn-secondary">
+              <a class="nav-link" routerLink="member/create">Create Member</a>
+            </div>
+          </div>
+          <div class="card col-3 col-lg-2">
+            <div class="btn btn-secondary">
+              <a class="nav-link" routerLink="post/create">Create post</a>
+            </div>
+          </div> -->
+            <div class="card col-6">
+              <div class="face face1">
+                <div class="content">
+                  <img src="../../assets/img/award2.png">
+                  <h3>Posts</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="post/create">Create post</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card col-6">
+              <div class="face face1">
+                <div class="content">
+                  <a href="#page6" target="_blank">
+                    <img src="../../assets/img/board.png">
+                  </a>
+                  <h3>Projet</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a href="admin/#sectionBlog">Posts</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card col-6">
+              <div class="face face1">
+                <div class="content">
+                  <img src="../../assets/img/launch_128.png">
+                  <h3>Services</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  <a href="#page4">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="card col-6">
+              <div class="face face1">
+                <div class="content">
+                  <img src="../../assets/img/design.png">
+                  <h3>Design</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  <a href="#work">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <ul>
           <li class="nav-item" routerLinkActive="active">
             <a class="nav-link" routerLink="/home">Home
               <span class="sr-only">(current)</span>
@@ -64,8 +124,14 @@
 
             <a class="nav-link" routerLink="member/create">Create Member</a>
           </li>
-        </ul>
+        </ul> -->
+        </div>
 
+
+        <!-- <app-post></app-post> -->
+
+      </div>
+      <div class="container-fluid" id="sectionBlog">
         <tbody>
 
           <tr *ngFor="let post of posts; let i = index">
@@ -78,8 +144,6 @@
             <td><a class="btn btn-danger" (click)="deletePost(post._id,i)">Delete</a></td>
           </tr>
         </tbody>
-        <!-- <app-post></app-post> -->
-
       </div>
       <app-work-in-progress></app-work-in-progress>
 
