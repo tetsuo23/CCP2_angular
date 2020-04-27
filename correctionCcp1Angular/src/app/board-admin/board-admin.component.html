@@ -132,19 +132,29 @@
 
       </div>
       <div class="container-fluid" id="sectionBlog">
-        <tbody>
+        <div class="row">
+          <div class="col-10 d-flex justify-content-between" *ngFor=" let post of posts; let i=index">
+            {{ post.title }}
+            <div>
+              <a class="btn btn-danger" (click)="deletePost(post._id,i)">Delete</a><a [routerLink]="['/post', post._id]" class="btn btn-primary">Edit</a>
+            </div>
+          </div>
+          <div class="col-2" *ngFor=" let post of posts; let i=index">
 
-          <tr *ngFor="let post of posts; let i = index">
-            <td>{{ post.title }}</td>
+          </div>
+          <tr>
 
 
 
-            <td><a [routerLink]="['/post', post._id]" class="btn btn-primary">Edit</a></td>
 
-            <td><a class="btn btn-danger" (click)="deletePost(post._id,i)">Delete</a></td>
-          </tr>
-        </tbody>
+
+
+        </div>
+
+
+
       </div>
+
       <app-work-in-progress></app-work-in-progress>
 
     </div>

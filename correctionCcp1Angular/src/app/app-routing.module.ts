@@ -40,6 +40,10 @@ const routes: Routes = [
     path: 'admin/post/:id',
     component: PostEditComponent
   },
+  {
+    path: 'post/:id',
+    component: PostEditComponent
+  },
 
   {
     path: 'post', redirectTo: '/admin'
