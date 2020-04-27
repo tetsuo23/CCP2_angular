@@ -7,10 +7,10 @@ import { TokenStorageService } from './_services/token-storage.service';
 @Injectable({
   providedIn: 'root'
 })
-export class MemberService {
+export class UserService {
 
   constructor(private http: HttpClient, private tokenStorageService: TokenStorageService) { }
-  uri = 'http://localhost:8080/members';
+  uri = 'http://localhost:8080/users';
   baseUrl = "http://localhost:8080/api/users";
 
   getAll() {
@@ -50,7 +50,7 @@ export class MemberService {
   //   this.http.post(`${this.uri}/add`, obj)
   //     .subscribe(res => console.log('Done'));
   // }
-  getMembers() {
+  getUsers() {
     return this
       .http
       .get(`${this.baseUrl}`);

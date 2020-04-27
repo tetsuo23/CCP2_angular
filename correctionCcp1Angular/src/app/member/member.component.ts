@@ -1,22 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 
-import { MemberService } from '../member.service';
-import Member from '../Member';
-import Users from '../../../node-js-jwt-auth-mongodb'
+
+
+import Users from './../models/user'
+import { UserService } from '../_services/user.service';
 @Component({
   selector: 'app-member',
   templateUrl: './member.component.html',
   styleUrls: ['./member.component.css']
 })
 export class MemberComponent implements OnInit {
-  user: Users[];
+  users: Users[];
+  username: string;
+  email: string;
+  password: string;
+  role: string;
 
-  users: any;
-  MemberService: any;
   currentUser = null;
   currentIndex = -1;
 
-  constructor(private ms: MemberService) { }
+  constructor(private ms: UserService) { }
 
   // ngOnInit() {
   //   this.retrieveUsers();
@@ -55,7 +58,7 @@ export class MemberComponent implements OnInit {
   // }
   ngOnInit() {
     this.ms
-      .getAll()
+      .getUsers()
       .subscribe((data: Users[]) => {
         this.users = data;
       });
