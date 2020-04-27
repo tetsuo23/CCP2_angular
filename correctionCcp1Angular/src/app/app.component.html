@@ -112,20 +112,20 @@
     </div>
     <div class="row">
       <div class="col-7 offset-9 col-xl-3" *ngIf="isLoggedIn">
-        <ul class="navbar-nav mr-auto navlinks col-6 offset-6 col-xl-8 offset-xl-4" routerLinkActive="active">
+        <ul class="navbar-nav mr-auto navlinks col-6 offset-6 col-xl-11 offset-xl-1" routerLinkActive="active">
 
-          <div class="row d-flex justify-content-end nav2_text">
+          <div class="row d-flex justify-content-center nav2_text">
             <li class="nav-item col-6 col-xl-6" *ngIf="isLoggedIn">
               <a href="/admin" class="nav-link" routerLink="admin">
                 <p>Admin Board</p>
               </a>
             </li>
-            <li class="nav-item col-7 col-xl-7" *ngIf="showModeratorBoard">
+            <li class="nav-item col-7 col-xl-6" *ngIf="showModeratorBoard">
               <a href="/mod" class="nav-link" routerLink="mod">
                 <p>Moderator Board</p>
               </a>
             </li>
-            <li class="nav-item col-2 col-xl-2" *ngIf="isLoggedIn">
+            <li class="nav-item col-2 col-xl-3" *ngIf="isLoggedIn">
               <a href="/home" class="nav-link" routerLink="/">
                 <p>Home</p>
               </a>
