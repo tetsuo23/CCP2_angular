@@ -40,6 +40,7 @@ import { PostService } from "./_services/post.service";
 import { PostShowComponent } from './post-show/post-show.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostCreateComponent } from './post-create/post-create.component';
+import { AdminPostComponent } from './admin-post/admin-post.component';
 
 
 
@@ -67,6 +68,7 @@ import { PostCreateComponent } from './post-create/post-create.component';
     PostShowComponent,
     PostEditComponent,
     PostCreateComponent,
+    AdminPostComponent,
 
 
 

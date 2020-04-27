@@ -4,6 +4,21 @@
   position: absolute;
   top: 120%;
   /* overflow-y: scroll; */
+  animation: appear .5s ease-in-out;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ----------------------------------------------------------- */
@@ -17,7 +32,7 @@
   min-height: 600px;
   background: #F3F3F3;
   height: 100vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   background-color: #6C805C;
   width: 99%;
 }
@@ -29,7 +44,8 @@
   padding: 10px;
   min-height: 420px;
   line-height: 20px;
-  height: 100vh
+  height: 100vh;
+
 }
 
 .pad-top {
@@ -78,6 +94,8 @@
 
 .navbar {
   width: 115%;
+  position: fixed;
+  z-index: 99;
 }
 
 .adjust-nav {
@@ -134,7 +152,7 @@ body {
 .container {
   height: 250px;
   max-width: 1230px;
-
+  margin-top: 7%;
 }
 
 .container .card {
@@ -144,6 +162,7 @@ body {
   align-items: center;
   background-color: #00000066;
   width: 100px;
+  height: 36vh;
 }
 
 .container .card .face {
@@ -283,6 +302,6 @@ body {
 
 @media screen and (min-width:1280px) {
   .navbar {
-    width: 88%;
+    width: 90%;
   }
 }

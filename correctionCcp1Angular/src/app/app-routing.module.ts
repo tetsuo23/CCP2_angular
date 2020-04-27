@@ -16,6 +16,7 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { PostCreateComponent } from './post-create/post-create.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostShowComponent } from './post-show/post-show.component';
+import { AdminPostComponent } from './admin-post/admin-post.component';
 
 
 
@@ -46,7 +47,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'post', redirectTo: '/admin'
+    path: 'admin/post', component: AdminPostComponent
   },
   {
     path: 'admin/members',

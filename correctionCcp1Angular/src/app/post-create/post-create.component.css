@@ -1,5 +1,5 @@
 #createForm {
-  height: 53vh;
+  height: 57vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7,6 +7,21 @@
   background-color: #6C805CDD;
   font-family: play;
   color: #333;
+  animation: appear .75s ease-in-out;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .container {
@@ -16,4 +31,8 @@
 
 label {
   color: #333 !important;
+}
+
+h3 {
+  font-size: 2rem;
 }
