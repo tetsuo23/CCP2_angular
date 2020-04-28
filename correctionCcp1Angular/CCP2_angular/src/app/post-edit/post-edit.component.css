@@ -1,0 +1,20 @@
+#editForm {
+  height: 61vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  background-color: #6C805CDD;
+  font-family: play;
+  color: #333;
+}
+
+.card-body {
+  background-color: #6C805C;
+  border: 1px solid black;
+  height: 55vh;
+}
+
+label {
+  color: #333 !important;
+}
