@@ -23,6 +23,7 @@ mongoose.connect(config.DB, {
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+app.use('/users', userRoute);
 app.use('/members', memberRoute);
 app.use('/contact', contactRoute);
 app.use('/connexion', connexionRoute);

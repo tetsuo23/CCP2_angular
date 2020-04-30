@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
 const postRoute = require('./app/routes/post.routes');
+const userRoute = require('./app/routes/user.routes');
 const app = express();
 
 var corsOptions = {
@@ -21,6 +22,9 @@ app.use(bodyParser.urlencoded({
 app.use('/posts', postRoute);
 const db = require("./app/models");
 const Role = db.role;
+app.use('/users', userRoute);
+
+
 
 db.mongoose
   .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {

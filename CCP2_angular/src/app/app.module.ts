@@ -15,7 +15,7 @@ import { MemberComponent } from './member/member.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MemberService } from './member.service';
+import { UserService } from './_services/user.service';
 import { MemberAddComponent } from './member-add/member-add.component';
 import { ContactAddComponent } from './contact-add/contact-add.component';
 import { ConnexionComponent } from './connexion/connexion.component'
@@ -83,7 +83,7 @@ import { AdminPostComponent } from './admin-post/admin-post.component';
     FormsModule
   ],
   providers: [
-    MemberService, ContactService, ConnexionService, PostService, authInterceptorProviders
+    UserService, ContactService, ConnexionService, PostService, authInterceptorProviders
   ],
   bootstrap: [AppComponent]
 })
