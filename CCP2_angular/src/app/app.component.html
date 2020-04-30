@@ -57,7 +57,7 @@
 
 
 
-          <!-- <div class="row" id="nav_smart" routerLinkActive="active">
+          <div class="row" id="nav_smart" routerLinkActive="active">
 
             <li class="nav-item col-6 col-xl-6" *ngIf="showAdminBoard">
               <a href="/admin" class="nav-link" routerLink="admin">
@@ -69,20 +69,16 @@
                 <p>Moderator</p>
               </a>
             </li>
-            <li class="nav-item col-6 col-xl-2" *ngIf="isLoggedIn">
-              <a href="/home" class="nav-link" routerLink="/">
-                <p>Home</p>
-              </a>
-            </li>
-          </div>
 
-          <div class="row">
-            <li class="nav-item col-12 col-xl-3" *ngIf="isLoggedIn">
+
+
+
+            <li class="nav-item col-6 col-xl-3" *ngIf="isLoggedIn">
               <a href class="nav-link" (click)="logout()">
                 <p>LogOut</p>
               </a>
             </li>
-          </div> -->
+          </div>
         </span>
       </div>
     </div>
