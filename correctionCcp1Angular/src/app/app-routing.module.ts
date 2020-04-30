@@ -50,7 +50,7 @@ const routes: Routes = [
     path: 'admin/post', component: AdminPostComponent
   },
   {
-    path: 'admin/members',
+    path: 'admin/users',
     component: MemberComponent
   },
   {
