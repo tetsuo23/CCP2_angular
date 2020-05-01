@@ -41,6 +41,7 @@ import { PostShowComponent } from './post-show/post-show.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostCreateComponent } from './post-create/post-create.component';
 import { AdminPostComponent } from './admin-post/admin-post.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -69,6 +70,7 @@ import { AdminPostComponent } from './admin-post/admin-post.component';
     PostEditComponent,
     PostCreateComponent,
     AdminPostComponent,
+    FooterComponent,
 
 
 
