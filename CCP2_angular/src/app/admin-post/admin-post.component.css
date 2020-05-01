@@ -1,10 +1,10 @@
 #admin {
-  height: 80vh;
-  width: 97vw;
+  height: 100vh;
+  width: 107vw;
   position: absolute;
-  top: 200%;
+  top: -10%;
+  left: -4%;
   overflow-y: scroll;
-
   animation: appear .5s ease-in-out;
 }
 
@@ -22,9 +22,14 @@
   }
 }
 
+h3 {
+  font-size: 1rem;
+}
+
+/* ----------------------------------------------------------- */
+
 #wrapper {
-  width: 79vw;
-  margin-top: 0;
+  width: 81vw;
 }
 
 #page-wrapper {
@@ -32,32 +37,71 @@
   min-height: 600px;
   background: #F3F3F3;
   height: 100vh;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   background-color: #6C805C;
   width: 99%;
 }
 
 #page-inner {
   width: 115%;
-  margin: 10px 20px 10px 0px;
+  margin: 55px 20px 10px 0px;
   background-color: #00000033;
   padding: 10px;
   min-height: 420px;
-  line-height: 50px;
-  height: 100vh;
-  padding-top: 20%;
+  line-height: 20px;
+  height: 300vh;
+
 }
 
 .navbar-inverse {
-
   background-color: #214761;
   border-color: #F0F0F0;
-  min-height: 80px;
+  /* min-height: 80px; */
   width: 115%;
+}
+
+.btn-secondary {
+  height: 50%;
+  width: 90%;
+}
+
+.btn-secondary img {
+  height: 76%;
+  transform: translate(-50%, -10%);
 }
 
 .navbar {
   width: 100%;
   position: fixed;
   z-index: 99;
+  height: 20%;
+  top: 4%;
+  left: 0;
+}
+
+
+@media(min-width:768px) {
+  #admin {
+    height: 80vh;
+    width: 97vw;
+    top: 200%;
+  }
+
+  #wrapper {
+    width: 79vw;
+    margin-top: 0;
+  }
+
+  #page-inner {
+    line-height: 50px;
+    padding-top: 20%;
+  }
+
+  .navbar-inverse {
+    min-height: 80px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
 }

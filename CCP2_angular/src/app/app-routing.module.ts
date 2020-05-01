@@ -21,54 +21,18 @@ import { AdminPostComponent } from './admin-post/admin-post.component';
 
 
 const routes: Routes = [
-  {
-    path: 'recrutement',
-    component: RecrutementComponent
-  },
-  {
-    path: 'accueil',
-    component: AccueilComponent
-  },
-  {
-    path: 'card',
-    component: CardComponent
-  },
-  {
-    path: 'admin/post/create',
-    component: PostCreateComponent
-  },
-  {
-    path: 'admin/post/:id',
-    component: PostEditComponent
-  },
-  {
-    path: 'post/:id',
-    component: PostEditComponent
-  },
-
-  {
-    path: 'admin/post', component: AdminPostComponent
-  },
-  {
-    path: 'admin/users',
-    component: MemberComponent
-  },
-  {
-    path: 'member/create',
-    component: MemberAddComponent
-  },
-  {
-    path: 'contact/create',
-    component: ContactAddComponent
-  },
-  {
-    path: 'connexion',
-    component: ConnexionComponent
-  },
-  {
-    path: 'search',
-    component: SearchComponent
-  },
+  { path: 'recrutement', component: RecrutementComponent },
+  { path: 'accueil', component: AccueilComponent },
+  { path: 'card', component: CardComponent },
+  { path: 'admin/post/create', component: PostCreateComponent },
+  { path: 'admin/post/:id', component: PostEditComponent },
+  { path: 'post/:id', component: PostEditComponent },
+  { path: 'adminPost', component: AdminPostComponent },
+  { path: 'admin/users', component: MemberComponent },
+  { path: 'member/create', component: MemberAddComponent },
+  { path: 'contact/create', component: ContactAddComponent },
+  { path: 'connexion', component: ConnexionComponent },
+  { path: 'search', component: SearchComponent },
   { path: 'home', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'user', component: BoardUserComponent },
