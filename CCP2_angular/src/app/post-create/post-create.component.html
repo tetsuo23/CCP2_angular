@@ -2,7 +2,7 @@
   <div class="card mb-8" style="margin-top: 25px">
     <div class="container">
       <div class="row">
-        <div class="col-xl-9 d-flex justify-content-start">
+        <div class="col-xl-9 col-md-9 d-flex justify-content-start">
           <h3>&lt; h2 &gt; Nouveau blog &lt; /h2 &gt;</h3>
         </div>
         <div class="col-3  offset-xl-1 col-md-2">
@@ -22,12 +22,12 @@
         </div>
 
 
-        <button type="button" href="#admin" class="float-right btn btn-warning" style="margin-bottom: 5px" [disabled]="angForm.pristine || angForm.invalid"
-          (click)="addPost(angForm.controls['title'].value, angForm.controls['content'].value)">
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="post/create">Create post</a>
-          </li>
-        </button>
+        <a href="" routerLink="/adminPost"><button type="submit" class="float-right btn btn-warning" style="margin-bottom: 5px" [disabled]="angForm.pristine || angForm.invalid"
+            (click)="addPost(angForm.controls['title'].value, angForm.controls['content'].value)">
+
+            Create post
+
+          </button></a>
       </form>
     </div>
   </div>

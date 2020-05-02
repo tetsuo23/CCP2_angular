@@ -73,14 +73,14 @@ body {
 .container .card .face.face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
-  color: #fff;
+  color: #EBEBEB;
   text-align: center;
   font-size: 1.5em;
 }
 
 .container .card .face.face2 {
   position: relative;
-  background: #fff;
+  background: #EBEBEB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +112,6 @@ body {
 
 .container .card .face.face2 .content a:hover {
   background: #333;
-  color: #fff;
+  color: #EBEBEB;
   z-index: 50;
 }

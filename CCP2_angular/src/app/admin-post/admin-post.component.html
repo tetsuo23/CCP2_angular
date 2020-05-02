@@ -4,22 +4,23 @@
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="adjust-nav">
           <div class="row">
-            <div class="col-8 col-lg-9 d-flex justify-content-around">
+            <div class="col-8 col-md-9 col-lg-9 d-flex justify-content-start">
               <h2>{{ username }} DASHBOARD</h2>
             </div>
             <!-- <a href="/admin" class="nav-link" routerLink="admin">
               <p>Admin Board</p>
             </a> -->
-            <div class="col-1 col-md-3 d-flex justify-content-end">
-              <button class="btn btn-secondary" [routerLink]="['/']">
-                <img src="../../assets/img/cross.png" alt="" srcset="../../assets/img/cross.png 1x">
-              </button>
-            </div>
-            <div class="col-3 col-md-2 d-flex justify-content-center">
+            <div class="col-3 col-md-2 d-flex justify-content-end">
               <button class="btn btn-secondary" [routerLink]="['/admin']">
                 <p>Return</p>
               </button>
             </div>
+            <div class="col-1 col-md-1 d-flex justify-content-end">
+              <button class="btn btn-secondary" [routerLink]="['/']">
+                <img src="../../assets/img/cross.png" alt="" srcset="../../assets/img/cross.png 1x">
+              </button>
+            </div>
+
 
 
           </div>

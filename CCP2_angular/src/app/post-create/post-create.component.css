@@ -37,3 +37,29 @@ label {
 h3 {
   font-size: 2rem;
 }
+
+@media screen and (min-width:961px) {
+
+  /*  --------- forms -------- */
+  #createForm {
+    height: 96vh;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .btn-secondary {
+    height: 65%;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  #createForm {
+    height: 73vh;
+    top: 113%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+
+}

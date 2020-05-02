@@ -73,7 +73,7 @@
 
 .logout-spn {
   float: right;
-  color: #fff;
+  color: #EBEBEB;
   font-size: 25px;
   font-weight: 800;
   margin: 20px;
@@ -116,7 +116,7 @@ h4 {
 .footer {
   background-color: #214761;
   width: 100%;
-  color: #fff;
+  color: #EBEBEB;
   padding: 20px 50px 20px 50px;
   padding-left: 20px;
 }
@@ -125,7 +125,7 @@ h4 {
 .footer>a,
 .footer>a:hover {
 
-  color: #fff;
+  color: #EBEBEB;
 }
 
 
@@ -208,14 +208,14 @@ body {
 .container .card .face.face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
-  color: #fff;
+  color: #EBEBEB;
   text-align: center;
   font-size: 1.5em;
 }
 
 .container .card .face.face2 {
   position: relative;
-  background: #fff;
+  background: #EBEBEB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,7 +247,7 @@ body {
 
 .container .card .face.face2 .content a:hover {
   background: #333;
-  color: #fff;
+  color: #EBEBEB;
   z-index: 50;
 }
 

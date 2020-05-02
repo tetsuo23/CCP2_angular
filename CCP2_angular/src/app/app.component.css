@@ -46,7 +46,7 @@ body {
 h1 {
   font-size: 1.375rem;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: #EBEBEB;
   position: absolute;
   top: 32%;
   left: 40%;
@@ -147,7 +147,7 @@ h2 {
 
 .nav div.main_list ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #EBEBEB;
   line-height: 60px;
   font-size: 1.5rem;
 }
@@ -271,7 +271,7 @@ a {
 }
 
 .nav2_text {
-  padding-top: 1%;
+
   height: 64px;
 }
 
@@ -313,8 +313,20 @@ a {
     padding-top: 1%;
   }
 
+  .nav div.main_list ul {
+    height: 42px;
+  }
+
   .nav div.main_list ul li {
-    height: 75px;
+    height: 40px;
+    width: 21%;
+  }
+
+  .icone {
+    vertical-align: top;
+    margin-top: 22%;
+    height: 60%;
+    width: 100%;
   }
 
   h1 {
@@ -330,6 +342,8 @@ a {
     margin-top: 13vh;
   }
 
+
+
   .nav_button {
     top: 25%;
   }
@@ -341,12 +355,12 @@ a {
   .nav2 {
 
     right: 0;
-    height: 3%;
+    height: 4%;
     width: 98%;
     /*! max-width: 5%; */
     min-width: 5rem;
     background-color: #00000033;
-    margin-top: 4%;
+    margin-top: 5.5%;
     margin-right: 1%;
 
   }
@@ -363,6 +377,8 @@ a {
   .btn-secondary {
     margin-bottom: 25%;
   }
+
+
 }
 
 
@@ -370,7 +386,7 @@ a {
 
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   h1 {
     top: 20%;
   }
@@ -383,7 +399,10 @@ a {
 
   .nav {
     height: 6% !important;
+  }
 
+  .nav2 {
+    margin-top: 3.5%;
   }
 
   .nav_scroll {
@@ -407,26 +426,37 @@ a {
 
   }
 
+  .nav div.main_list ul li {
+    height: 21px;
+    width: 19%;
+  }
+
+  .nav div.main_list ul {
+    height: 34px;
+  }
+
   .nav div.main_list ul li actif {
     transform: scale(1.5);
-    color: #fff;
+    color: #EBEBEB;
   }
 
   .nav div.main_list {
-    padding-top: 1%;
+    padding-top: 0;
 
   }
 
   #logo {
-    width: 70%;
+    width: 100%;
   }
 
   #titre {
-    top: 35%;
+    top: 15%;
   }
 
   .icone {
-    height: 35%;
+    height: 100%;
+    width: 70%;
+    margin-top: 30%;
   }
 
   a {
@@ -468,4 +498,11 @@ a {
   .navTrigger {
     letter-spacing: 1em;
   }
+
+  img {
+    height: 15vh;
+  }
+
+
+
 }

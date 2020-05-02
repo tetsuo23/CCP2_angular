@@ -82,26 +82,48 @@ h3 {
 
 @media(min-width:768px) {
   #admin {
-    height: 80vh;
-    width: 97vw;
-    top: 200%;
+    height: 100vh;
+    width: 103vw;
+    top: 0%;
+    left: -2%;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   #wrapper {
-    width: 79vw;
+    width: 83vw;
     margin-top: 0;
   }
 
   #page-inner {
     line-height: 50px;
-    padding-top: 20%;
+    padding-top: 2%;
   }
 
   .navbar-inverse {
-    min-height: 80px;
+    min-height: 60px;
   }
 
   .navbar {
     width: 100%;
+    height: 10%;
+    top: 2%;
+    left: 0;
+  }
+
+  .adjust-nav {
+    width: 100%;
+  }
+
+  .btn-secondary {
+    height: 50%;
+    width: 77%;
+  }
+
+  .btn-secondary img {
+    height: 76%;
+    transform: translate(-10%, -10%);
   }
 }

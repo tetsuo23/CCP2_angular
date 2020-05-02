@@ -1,6 +1,13 @@
 #blog {
   height: 300vh;
   overflow-y: scroll;
+  background-image: url('./../../assets/img/back_webmag55.png');
+  padding-top: 5%;
+
+}
+
+h2 {
+  margin-top: 10%
 }
 
 table {
@@ -16,5 +23,7 @@ table {
   background-color: #00000033;
   border-radius: 1%;
   padding: 5%;
-  width: 90%
+  width: 90%;
+  height: 200px;
+  overflow-y: scroll;
 }

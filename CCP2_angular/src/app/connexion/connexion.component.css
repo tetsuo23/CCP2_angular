@@ -21,8 +21,10 @@
 .btn-secondary {
   margin: 2%;
   height: 61%;
-  width: 100%;
+  width: 96%
 }
+
+
 
 img {
   height: 80%;
@@ -45,4 +47,16 @@ label {
 
 .card {
   background-color: transparent
+}
+
+@media screen and (min-width:961px) {
+  .btn-secondary {
+    width: 45%
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .btn-secondary {
+    width: 30%
+  }
 }
